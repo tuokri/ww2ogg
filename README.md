@@ -3,6 +3,8 @@ ww2ogg
 
 Audiokinetic Wwise RIFF/RIFX Vorbis to Ogg Vorbis converter by hcs
 
+Support for CMake compilation and long Windows paths by tuokri
+
 Usage
 ----
 Standard usage is just

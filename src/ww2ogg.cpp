@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstring>
+#include <sstream>
 #include "wwriff.h"
 #include "stdint.h"
 #include "errors.h"
@@ -158,7 +159,9 @@ void ww2ogg_options::parse_args(int argc, char ** argv)
                 throw Argument_error("only one input file at a time");
             }
 
-            in_filename = argv[i];
+            std::stringstream ss;
+            ss << "\\\\?\\" << argv[i];
+            in_filename = ss.str();
             set_input = true;
         }
     }

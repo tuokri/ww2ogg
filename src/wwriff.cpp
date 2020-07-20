@@ -109,7 +109,7 @@ Wwise_RIFF_Vorbis::Wwise_RIFF_Vorbis(
   :
     _file_name(name),
     _codebooks_name(codebooks_name),
-    _infile(name.c_str(), ios::binary),
+    _infile(name, ios::binary),
     _file_size(-1),
     _little_endian(true),
     _riff_size(-1),
